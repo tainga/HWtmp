@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 
 public class Tester {
 
@@ -6,6 +7,11 @@ public class Tester {
 		RSA test = new RSA();
 		test.generateKey();
 
+		BigInteger M = RSAHelper.C4.modPow(RSAHelper.eVince, RSAHelper.nVince);
+		
+		String X = RSAHelper.recoverTextFromBigInteger(M);
+		
+		System.out.println(X);
 	}
 
 }
