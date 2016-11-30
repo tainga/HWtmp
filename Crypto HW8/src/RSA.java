@@ -4,8 +4,9 @@ import java.security.SecureRandom;
 
 public class RSA {
 	
-	private BigInteger[] privateKey;
-	public BigInteger[] publicKey;
+	//private BigInteger[] privateKey;
+	public static BigInteger[] privateKey;
+	public static BigInteger[] publicKey;
 	
 	public void generateKey() {
 		BigInteger p = BigInteger.probablePrime(1024, new SecureRandom());
