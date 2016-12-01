@@ -1,3 +1,11 @@
+/*
+ *
+ * Anastasia Taing
+ * Hoan Nguyen
+ * 
+ */
+
+
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
