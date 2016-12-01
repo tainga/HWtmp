@@ -19,7 +19,7 @@ public class Tester {
 		//"signed" our answer by encrypting with our private key
 		BigInteger signedAnswer = encodedAnswer.modPow(RSA.privateKey[0],RSA.privateKey[1]);
 		
-		//Encrypt our encrypted answer with his public key
+		//Encrypt our encrypted answer with given public key
 		BigInteger signedEncryptedAnswer = signedAnswer.modPow(RSAHelper.eVince, RSAHelper.nVince);
 		
 		//encrypted message in decimal
